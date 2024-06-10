@@ -29,4 +29,4 @@ echo "testing webhook - Version of java installed"
 java --version
 
 echo "testing webhook - Version of git installed"
-git version
+git --version
