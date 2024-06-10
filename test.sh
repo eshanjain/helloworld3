@@ -24,6 +24,6 @@ echo "Versions of xcode Installed:"
 
 xcodebuild -version
 
-echo "testing webhook - Version of java installed:::::"
+echo "testing webhook - Version of java installed"
 
 java --version
