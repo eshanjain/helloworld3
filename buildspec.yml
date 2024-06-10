@@ -1,0 +1,118 @@
+version: 0.2
+
+
+
+
+
+
+
+run-as: cbuser
+
+
+
+  
+
+
+
+phases:
+
+
+
+  pre_build:
+
+
+
+    run-as: root
+
+
+
+    commands:
+
+
+
+      - echo "Printing user 1"
+
+
+
+      - whoami
+
+
+
+      - echo $PATH
+
+
+
+      - echo $HOME
+
+
+
+    
+
+
+
+  build:
+
+
+
+    commands:
+
+
+
+      - echo "Printing user 2"
+
+
+
+      - whoami
+
+
+
+      - echo $PATH
+
+
+
+      - echo $HOME
+
+
+
+      - export -p
+
+
+
+      - echo "hello"
+
+
+
+      - echo "permissoin for test.sh file"
+
+
+
+      - ls -l test.sh
+
+
+
+      - chmod 755 test.sh
+
+
+
+      - echo "permissoin after change for test.sh file"
+
+
+
+      - ls -l test.sh
+
+
+
+      - ./test.sh
+
+
+
+      
+
+
+
+artifacts:
+
+
+
+    files:
+        - test.sh
