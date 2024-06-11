@@ -33,3 +33,6 @@ git --version
 
 echo "testing webhook - Version of node installed"
 node -v
+
+echo "testing code connection - Version of fastlane installed"
+fastlane --version
